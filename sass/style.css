@@ -236,10 +236,11 @@ li {
   background: #FEFEFE;
   justify-content: center;
   align-items: center;
-  padding: 15px 20px 40px;
+  padding: 20px 20px 40px;
 }
 
 .item__services {
+  position: relative;
   margin-right: 30px;
 }
 
@@ -260,12 +261,14 @@ li {
 
 .item__arrow {
   position: relative;
-  left: 50px;
+  left: 43px;
+  top: 5px;
   width: 35px;
 }
 .item__arrow_company {
-  top: 10px;
-  left: 40px;
+  position: absolute;
+  top: 25px;
+  left: 258px;
 }
 
 .item__text {
@@ -457,6 +460,7 @@ li {
 
 .company__image {
   max-width: 589px;
+  margin-top: 5px;
   background-image: url(../assets/images/boxes-minibus.png);
   background-size: cover;
   background-position: center;

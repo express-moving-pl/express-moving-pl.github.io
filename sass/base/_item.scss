@@ -7,11 +7,12 @@
         background: $color-text;
         justify-content: center;
         align-items: center;
-        padding: 15px 20px 40px;
+        padding: 20px 20px 40px;
     }
 }
 
 .item__services{
+    position: relative;
     margin-right: 30px;
 }
 
@@ -33,11 +34,13 @@
 
 .item__arrow {
     position: relative;
-    left: 50px;
+    left: 43px;
+    top: 5px;
     width: 35px;
     &_company {
-        top: 10px;
-        left: 40px;
+        position: absolute;
+        top: 25px;
+        left: 258px;
     }
 }
 
