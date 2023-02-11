@@ -434,12 +434,16 @@ li {
   background: #EAEAEA;
 }
 
+.company__title {
+  padding: 150px 0 40px;
+}
+
 .company__wrapper {
-  padding: 180px 0 140px;
+  padding-bottom: 140px;
 }
 
 .company__info {
-  padding: 30px 40px 0 0;
+  padding-right: 40px;
   color: #1D1D1D;
   font-size: 2rem;
   line-height: 2.5rem;
@@ -448,7 +452,7 @@ li {
 }
 
 .info-summarizing {
-  padding: 15px 0 40px;
+  padding: 15px 0 80px;
 }
 
 .company__image {
