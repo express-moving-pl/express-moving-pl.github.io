@@ -1,0 +1,28 @@
+.company {
+    background: $color-background;
+}
+
+.company__wrapper {
+    padding: 180px 0 140px;
+}
+
+.company__info {
+    padding: 30px 40px 0 0;
+    color: $color-additional;
+    @include font(2rem, 2.5rem)
+
+}
+
+.info-summarizing {
+    padding: 15px 0 40px;
+}
+
+.company__image {
+    max-width: 589px;
+    background-image: url(../assets/images/boxes-minibus.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+

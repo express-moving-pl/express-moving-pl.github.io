@@ -1,12 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/icons/car.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="sass/style.css">
     <title>express moving</title>
 </head>
-<body style="background: url(assets/logo.svg); background-size: cover;">
-    <h1 style="text-align: center;">Поможем с любым переездом</h1>
+
+    <header class="header">
+        <div class="wrapper header__wrapper layout-3-column">
+            <div class="header__logo logo">
+                <div class="logo__image"></div>
+                <p class="logo__text">express <br>moving</p>
+            </div>
+            <div class="header__contacts">
+                <a class="contact__link" href="tel:+48452687424">    
+                    <div class="contact">
+                        <div class="contacts__image">
+                            <img class="image" src="assets/icons/phone2.svg" alt="phone">
+                        </div>
+                        <div class="contacts__content">
+                            <p class="contacts__text">Заказать по телефону</p>
+                            <p class="contacts__number">+48 452 687 424</p>
+                        </div>
+                    </div>
+                </a>
+                <a class="contact__link" href="https://telegram.me/Maksim_Vil" target="_blank">
+                    <div class="contact">
+                        <div class="contacts__image">
+                            <img class="image" src="assets/icons/telegram2.svg" alt="telegram">
+                        </div>
+                        <div class="contacts__content">
+                            <p class="contacts__text">или через Телеграм</p>
+                            <p class="contacts__number">@Maksim_Vil</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="header__language">
+                <span class="language language_aktive">RU</span>
+                <span class="language">PL</span>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <section class="services">
+            <div class="wrapper services__wrapper">
+                <div class="services__text">
+                    <h1 class="services__title">Грузовые перевозки по Европе</h1>
+                    <p class="services__description">Поможем с транспортировкой любой сложности <br> Ваши вещи будут доставлены в целости и сохранности</p>
+                </div>
+                <div class="services__content layout-4-column">
+
+                    <div class="item item__services">
+                        <div class="item__image-background">
+                            <img class="item__image" src="assets/icons/txt2.svg" alt="services"></img>
+                        </div>
+                        <h3 class="item__text item__text_services">НАШИ УСЛУГИ</h3>
+                        <img class="item__arrow" src="assets/icons/arrow_right.svg" alt="services"></img>
+                    </div>
+
+                    <div class="item">
+                        <div class="item__image-background">
+                            <img class="item__image" src="assets/icons/bed.svg" alt="services"></img>
+                        </div>
+                        <h3 class="item__text">квартирные переезды</h3>
+                    </div>
+
+                    <div class="item">
+                        <div class="item__image-background">
+                            <img class="item__image" src="assets/icons/computer.svg" alt="services"></img>
+                        </div>
+                        <h3 class="item__text">офисные переезды</h3>
+                    </div>
+
+                    <div class="item">
+                        <div class="item__image-background">
+                            <img class="item__image" src="assets/icons/boxes.svg" alt="services"></img>
+                        </div>
+                        <h3 class="item__text">перевозка сборных грузов</h3>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="company">
+            <div class="wrapper">
+                <div class="services__content layout-4-column">
+                    <div class="item item_content item__services">
+                        <p class="content__text content__text_company">наши преимущества</p>
+                        <img class="item__arrow item__arrow_company" src="assets/icons/arrow_right.svg" alt="services"></img>
+                    </div>
+                    <div class="item item_content">
+                        <p class="content__text">пунктуальность и надежность</p>
+                    </div>
+                    <div class="item item_content">
+                        <p class="content__text">лучшие цены</p>
+                    </div>
+                    <div class="item item_content">
+                        <p class="content__text">гарантия сохранности груза</p>
+                    </div>
+                </div>
+
+                <div class="layout-2-column company__wrapper">
+                    <div class="info____wrapper">
+                        <h2>O компании</h2>
+                        <p class="company__info">
+                            Мы-транспортная компания с многолетним опытом работы в сфере грузоперевозок по Европе.<br>
+                            Мы успешно выполняем свои задачи по доставке грузов нашим клиентам уже более 7 лет.<br>
+                            У нас высококвалифицированный штат логистов и водителей. Все водители с большим опытом работы с грузами. 
+                            Вы можете быть уверены, что ваши вещи будут доставлены в целости и сохранности. 
+                            Наши машины оборудованы всем необходимым для качественного крепления груза. 
+                        </p>
+                        <p class="company__info info-summarizing"> Звоните! Мы будем рады видеть Вас в числе наших клиентов!</p>
+                    </div>
+                    <div class="company__image"></div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="wrapper footer__wrapper layout-2-column">
+            <div class="footer__logo logo">
+                <div class="logo__image"></div>
+                <p class="logo__text">express <br>moving</p>
+            </div>
+            <ul class="footer__contacts">
+                <a class="contact__link" href="tel:+48452687424">    
+                    <li class="contact-footer">
+                        <div class="contacts__image">
+                            <img class="image" src="assets/icons/phone2.svg" alt="phone">
+                        </div>
+                        <p class="contacts__name">+48 452 687 424</p>
+                    </li>
+                </a>
+                <a class="contact__link" href="https://telegram.me/Maksim_Vil" target="_blank">
+                    <li class="contact-footer">
+                        <div class="contacts__image">
+                            <img class="image" src="assets/icons/telegram2.svg" alt="telegram">
+                        </div>
+                        <p class="contacts__name">Телеграм</p>
+                    </li>
+                </a>
+            </ul>
+
+        </div>
+    </footer>
+
+<body>
+
 </body>
+
 </html>

@@ -1,0 +1,42 @@
+.header {
+    background: $color-black;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.header__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.header__language {
+    @include font($size: 1.6rem, $height: 3.4rem, $weight: 700);
+    color: $color-complimentary;
+    text-align: end;
+}
+
+.language {
+    margin-left: 10px;
+    cursor: pointer;
+    @extend %transition;
+    &_aktive {
+        border-bottom: 1px solid $color-border;
+    }
+    &:hover {
+        color: $color-primary;
+        border-bottom: 1px solid $color-primary;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.7);
+}
+    // &:not(.language_aktive):hover {
+    //     color: $color-primary;
+    // }
+}
+
+.header__contacts {
+    min-width: 500px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}

@@ -1,0 +1,20 @@
+{
+  "name": "express-moving",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "style": "sass --watch sass/style.scss sass/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/express-moving-pl/express-moving.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/express-moving-pl/express-moving/issues"
+  },
+  "homepage": "https://github.com/express-moving-pl/express-moving#readme"
+}
