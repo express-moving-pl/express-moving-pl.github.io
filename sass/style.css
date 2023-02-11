@@ -354,6 +354,7 @@ li {
 }
 
 .footer__contacts {
+  max-width: 220px;
   margin: 30px 0;
 }
 
