@@ -4,10 +4,10 @@
     justify-content: center;
     border: 1px solid $color-border;
     border-radius: 20px;
-    padding: 5px 10px;
+    padding: 8px 10px;
     color: $color-text; 
     &:hover {
-        background: rgba(255, 255, 255, 0.25);
+        background: rgba(88, 88, 88, 0.4);
         .contacts__number {
             color: $color-primary;
         }
@@ -21,7 +21,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding: 10px 0;
+    padding-bottom: 20px;
     color: $color-text; 
     &:hover {
         .contacts__name {
@@ -62,7 +62,7 @@
 }
 
 .contacts__text {
-    @include font(1.6rem, 2.2rem);
+    @include font(1.6rem, 2.4rem);
 }
 
 .contacts__number {
@@ -70,6 +70,8 @@
 }
 
 .contacts__name {
-    width: 132.83px;
+    width: 142px;
     margin-left: 10px;
+    @include font(1.7rem);
+
 }

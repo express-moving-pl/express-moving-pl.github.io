@@ -3,7 +3,7 @@
 }
 
 .layout-3-column {
-    @include columns($width: 0%);
+    @include columns($width: 33.1%);
 }
 
 .layout-4-column {

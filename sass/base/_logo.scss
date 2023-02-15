@@ -1,22 +1,16 @@
 .logo {
-    display: flex;
-}
-
-.logo__image {
-    position: relative;
-    left: -15px;
-    width: 160px;
-    height: 100px;
+    width: 275px;
+    height: 170px;
     background-image: url(../assets/images/logo.jpg);
     background-position: center;
     background-size: cover;
 }
 
 .logo__text {
-    position: relative;
-    left: -15px;
-    margin: auto 0;
-    @include font($size: 2rem, $height: 2.6rem, $weight: 700);
+    margin-top: 130px;
+    text-align: center;
+    vertical-align: bottom;
+    @include font($size: 2.2rem, $height: 2.6rem, $weight: 700);
     color: $color-text;
     letter-spacing: 0.05em;
 }

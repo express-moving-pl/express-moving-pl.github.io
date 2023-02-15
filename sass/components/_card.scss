@@ -1,0 +1,52 @@
+.card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 230px;
+    margin-bottom: 3px;
+    background-position: center;
+    background-size: cover;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4);
+    }
+    &_germany {
+        background-image: url(../assets/images/Germany.jpg);
+    }
+    &_france {
+        background-image: url(../assets/images/France.jpg);
+    }
+    &_czech {
+        background-image: url(../assets/images/Czech.jpg);
+    }
+    &_belgium {
+        background-image: url(../assets/images/Belgium.jpg);
+    }
+    &_netherlands {
+        background-image: url(../assets/images/Netherlands.jpg);
+    }
+    &_spain {
+        background-image: url(../assets/images/Spain.jpg);
+        background-position: bottom;
+    }
+    &_portugal {
+        background-image: url(../assets/images/Portugal.jpg);
+    }
+    &_italy {
+        background-image: url(../assets/images/Italy.jpg);
+    }
+    &_greece {
+        background-image: url(../assets/images/Greece.jpg);
+    }
+}
+
+.card__text {
+    position: relative;
+    @include font($size: 2.6rem, $weight: 700);
+    color: $color-text;
+    letter-spacing: 0.05em;
+}

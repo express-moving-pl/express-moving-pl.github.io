@@ -1,17 +1,26 @@
 .header {
+    flex: 0;
     background: $color-black;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.7);
     z-index: 1;
 }
 
-.header__wrapper{
+.header__wrapper {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 0;
+    padding: 25px 0;
+}
+
+.header__logo {
+    position: absolute;
+    top: -17px;
+    z-index: 1;
 }
 
 .header__language {
+    max-width: 5%;
     @include font($size: 1.6rem, $height: 3.4rem, $weight: 700);
     color: $color-complimentary;
     text-align: end;
@@ -35,7 +44,7 @@
 }
 
 .header__contacts {
-    min-width: 500px;
+    min-width: 85%;
     display: flex;
     justify-content: flex-end;
     gap: 30px;

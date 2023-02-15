@@ -7,7 +7,6 @@
 @import "base/base";
 @import "base/logo";
 @import "base/contact";
-@import "base/item";
 
 //Layouts
 @import "layouts/wrapper";
@@ -18,4 +17,7 @@
 //Components
 @import "components/services";
 @import "components/company";
+@import "components/geography";
+@import "components/item";
+@import "components/card";
 

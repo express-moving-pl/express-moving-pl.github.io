@@ -1,18 +1,17 @@
 .services {
     position: relative;
     margin: 4px auto 0 auto;
-}
-
-.services::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url(../assets/images/pasted.jpg);
-    background-size: cover;
-    filter: blur(4px);
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(../assets/images/pasted.jpg);
+        background-size: cover;
+        filter: blur(4px);
+    }
 }
 
 .services__wrapper {
@@ -27,7 +26,6 @@
     max-width: 680px;
     margin: 145px 0 0 30px;
     padding: 20px 40px;
-    // border: 1.5px solid $color-additional;
     color: $color-additional;
 }
 

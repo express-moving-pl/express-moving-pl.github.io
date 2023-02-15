@@ -2,19 +2,22 @@
     background: $color-background;
 }
 
+.company__wrapper {
+    padding-bottom: 120px;
+}
+
 .company__title {
     padding: 150px 0 40px;
 }
 
-.company__wrapper {
-    padding-bottom: 140px;
-}
-
 .company__info {
-    padding-right:40px;
     color: $color-additional;
     @include font(2rem, 2.5rem)
 
+}
+
+.info__wrapper {
+    padding-right: 75px;
 }
 
 .info-summarizing {
