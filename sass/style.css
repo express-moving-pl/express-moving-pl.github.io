@@ -437,6 +437,7 @@ li {
 
 .company__image {
   max-width: 589px;
+  height: 390px;
   margin-top: 5px;
   background-image: url(../assets/images/boxes-minibus.png);
   background-size: cover;
