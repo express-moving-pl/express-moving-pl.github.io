@@ -34,11 +34,17 @@
     @include media-laptop-small {
         padding-bottom: 25px;
     }
+    @include media-mobile-small {
+        padding-bottom: 17px;
+    }
 }
 
 .geography__content {
     max-width: 85%;
     margin: 0 auto;
+    @include media-mobile-small {
+        max-width: 100%;
+    }
 }
 
 

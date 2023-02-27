@@ -42,6 +42,9 @@
     @include media-laptop {
         margin: 0 auto 0 0;
     }
+    @include media-mobile{
+        padding-bottom: 10px;
+    }
 }
 
 .contact__link {
@@ -95,5 +98,8 @@
     }
     @include media-tablet {
         @include font(1.5rem);
+    }
+    @include media-mobile {
+        width: auto;
     }
 }

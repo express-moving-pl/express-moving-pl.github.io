@@ -16,6 +16,10 @@
         width: 80%;
         background: rgba(255, 255, 255, 0.7);
     }
+    @include media-mobile-small {
+        padding: 22px 20px 10px;
+        width: 90%;
+    }
     &_content {
         background: $color-text;
         justify-content: center;
@@ -45,6 +49,10 @@
         margin-top: 40px;
         background: rgba(255, 255, 255, 0.7);
     }
+}
+
+.item__advantages-mobile {
+    margin-top: 0;
 }
 
 .item-none {
@@ -77,6 +85,7 @@
     background: $color-white;
     border-radius: 50px;
     @include media-mobile {
+        min-width: 50px;
         width: 50px;
         height: 50px;
     }
@@ -105,7 +114,7 @@
         right: -16px;
         bottom: 12px;
         }
-&_company {
+    &_company {
         top: 25px;
         @include media-laptop-small {
             top: 19px;
