@@ -587,11 +587,11 @@ a {
 }
 @media (max-width: 735px) {
   .requisites__data {
-    font-size: 1.3rem;
-    line-height: 1.8rem;
+    font-size: 1.25rem;
+    line-height: 1.7rem;
     font-weight: 400;
     font-style: normal;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
   }
 }
 @media (max-width: 380px) {
