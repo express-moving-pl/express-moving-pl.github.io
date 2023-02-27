@@ -7,27 +7,82 @@
     position: relative;
     justify-content: flex-end;
     padding: 40px 0;
+    @include media-laptop {
+        padding: 40px 50px;
+    }
+    @include media-laptop-small {
+        padding: 35px 50px;
+    }
+    @include media-tablet {
+        padding: 28px 50px;
+    }
+    @include media-mobile {
+        flex-direction: column;
+        gap: 15px;
+        padding: 28px 25px;
+    }
 }
 
 .footer__logo{
     position: absolute;
-    top: 0;
+    top: 4px;
     left: -30px;
+    @include media-laptop {
+        left: 20px;
+    }
+    @include media-tablet {
+        left: 22px;
+    }
+    @include media-mobile {
+        left: 0;
+    }
 }
 
 .requisites {
     min-width: 80%;
     padding-left: 446px;
+    @include media-laptop {
+        padding-left: 395px;
+    }
+    @include media-laptop-small {
+        padding-left: 325px;
+    }
+    @include media-tablet {
+        min-width: 65%;
+        padding-left: 235px;
+    }
+    @include media-mobile {
+        padding-left: 54%;
+        z-index: 1;
+    }
 }
 
 .requisites__data {
     margin-bottom: 10px;
     color: $color-text;
     text-transform: uppercase;
-    @include font(1.5rem, 2.2rem)
+    @include font(1.5rem, 2.2rem);
+    @include media-laptop {
+        @include font(1.4rem, 2.1rem);
+    }
+    @include media-tablet {
+        @include font(1.3rem, 2rem);
+    }
+    @include media-mobile {
+        @include font(1.3rem, 1.8rem);
+        margin-bottom: 8px;
+    }
 }
 
 .footer__contacts {
     max-width: 20%;
     margin: 0;
+    padding-left: 0;
+    @include media-tablet {
+        min-width: 25.4%;
+    }
+    @include media-mobile {
+        display: flex;
+        gap: 35%;
+    }
 }

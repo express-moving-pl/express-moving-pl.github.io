@@ -7,16 +7,30 @@
 
 .header__wrapper {
     position: relative;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 25px 0;
+    @include media-laptop {
+        padding: 25px 50px;
+    }
+    @include media-mobile {
+        padding: 10px 25px 25px;
+        align-items: flex-end;
+        flex-direction: column-reverse;
+        gap: 120px;
+    }
 }
 
 .header__logo {
     position: absolute;
     top: -17px;
     z-index: 1;
+    @include media-laptop {
+        top: -10px;
+        left: 22px;
+    }
+    @include media-mobile {
+        left: calc((100% - 250px)/2);
+    }
 }
 
 .header__language {
@@ -24,6 +38,9 @@
     @include font($size: 1.6rem, $height: 3.4rem, $weight: 700);
     color: $color-complimentary;
     text-align: end;
+    @include media-mobile {
+        max-width: 100%;
+    }
 }
 
 .language {
@@ -37,7 +54,7 @@
         color: $color-primary;
         border-bottom: 1px solid $color-primary;
         box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.7);
-}
+    }
     // &:not(.language_aktive):hover {
     //     color: $color-primary;
     // }
@@ -48,4 +65,18 @@
     display: flex;
     justify-content: flex-end;
     gap: 30px;
+    @include media-laptop-small {
+        min-width: 90%;
+    }
+    @include media-tablet {
+        flex-direction: column;
+        gap: 15px;
+        margin: 0 auto;
+        min-width: 67%;
+        padding-left: 225px;
+    }
+    @include media-mobile {
+        align-items: center;
+        padding-left: 0;
+    }
 }

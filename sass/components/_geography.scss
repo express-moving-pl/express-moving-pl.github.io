@@ -14,15 +14,30 @@
 .geography__wrapper {
     position: relative;
     padding: 60px 0 160px 0;
+    @include media-laptop {
+        padding: 60px 50px 160px;
+    }
+    @include media-laptop-small {
+        padding-top: 40px;
+    }
+    @include media-tablet {
+        padding-bottom: 120px;
+    }
+    @include media-mobile {
+        padding: 30px 25px 70px;
+    }
 }
 
 .geography__title {
     text-align: center;
     padding-bottom: 40px;
+    @include media-laptop-small {
+        padding-bottom: 25px;
+    }
 }
 
 .geography__content {
-    max-width: 80%;
+    max-width: 85%;
     margin: 0 auto;
 }
 

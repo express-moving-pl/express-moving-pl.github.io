@@ -11,6 +11,9 @@
         background-image: url(../assets/images/pasted.jpg);
         background-size: cover;
         filter: blur(4px);
+        @include media-mobile {
+            background-position: center;
+        }
     }
 }
 
@@ -20,23 +23,68 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    @include media-laptop-small {
+        height: 615px;
+    }
+    @include media-tablet {
+        height: 495px;
+    }
+    @include media-mobile {
+        height: 100%;
+    }
 }
 
 .services__text {
     max-width: 680px;
-    margin: 145px 0 0 30px;
+    margin: 155px 0 0 30px;
     padding: 20px 40px;
     color: $color-additional;
+    @include media-laptop-small {
+        margin: 140px 0 0 16px;
+        padding: 20px 0;
+    }
+    @include media-tablet {
+        margin: 95px 0 0;
+    }
+    @include media-tablet {
+        margin: 20px 0 0;
+    }
 }
 
 .services__title {
     text-transform: uppercase;
     text-shadow: 1px 1px 2px $color-additional, 0 0 1em $color-complimentary, 0 0 0.2em $color-text;
+    @include media-mobile {
+        text-align: center;
+    }
 }
 
 .services__description {
     padding-top: 14px;
     @include font($size: 1.7rem, $height: 2rem, $weight: 500);
+    @include media-tablet {
+        padding-top: 10px;
+        padding-bottom: 20px;
+        @include font($size: 1.6rem, $height: 1.8rem, $weight: 500);
+    }
 }
 
+.services__content {
+    @include media-tablet {
+        display: none;
+    }
+} 
+
+.services__content-small {
+    display: none;
+    @include media-tablet {
+        display: flex;
+        justify-content: space-between;
+    }
+    @include media-mobile {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+}
 

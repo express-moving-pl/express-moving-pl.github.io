@@ -4,24 +4,66 @@
 
 .company__wrapper {
     padding-bottom: 120px;
+    @include media-laptop-small {
+        padding-bottom: 100px;
+    }
+    @include media-tablet {
+        flex-direction: column;
+    }
+    @include media-mobile {
+        padding-bottom: 80px;
+    }
 }
 
 .company__title {
     padding: 150px 0 40px;
+    @include media-laptop-small {
+        padding: 110px 0 27px;
+    }
+    @include media-tablet {
+        padding: 100px 0 27px;
+        text-align: center;
+    }
+    @include media-tablet {
+        padding: 80px 0 22px;
+    }
 }
 
 .company__info {
     color: $color-additional;
-    @include font(2rem, 2.5rem)
-
+    @include font(2rem, 2.5rem);
+    @include media-laptop-small {
+        @include font(1.8rem, 2.1rem);
+    }
+    @include media-tablet {
+        @include font(1.8rem, 2.5rem);
+    }
+    @include media-mobile {
+        @include font(1.8rem, 2.2rem);
+    }
 }
 
 .info__wrapper {
     padding-right: 75px;
+    @include media-laptop {
+        padding-right: 30px;
+    }
+    @include media-laptop-small {
+        padding-right: 53px;
+    }
+    @include media-tablet {
+        padding-right: 0;
+    }
+    @include media-mobile {
+        max-width: 100%;
+    }
 }
 
 .info-summarizing {
     padding: 15px 0 80px;
+    @include media-tablet {
+        padding: 15px 0 40px;
+    }
 }
 
 .company__image {
@@ -31,6 +73,18 @@
     background-image: url(../assets/images/boxes-minibus.png);
     background-size: cover;
     background-position: center;
+    @include media-tablet {
+        width: 560px;
+        height: 310px;
+        flex-basis: auto;
+        margin: 0 auto;
+        background-position: bottom;
+        border-radius: 5px;
+    }
+    @include media-mobile {
+        height: 230px;
+        max-width: 100%;
+    }
 }
 
 

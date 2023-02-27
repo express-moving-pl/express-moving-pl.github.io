@@ -1,7 +1,6 @@
 .contact {
     display: flex;
     align-items: center;
-    justify-content: center;
     border: 1px solid $color-border;
     border-radius: 20px;
     padding: 8px 10px;
@@ -15,6 +14,14 @@
             background: $color-primary; 
         }
     }
+    @include media-tablet {
+        width: 222px;
+        padding: 5px 10px;
+    }
+    @include media-mobile {
+        width: 229px;
+        padding: 8px 15px;
+    }
 }
 
 .contact-footer {
@@ -22,6 +29,7 @@
     align-items: center;
     justify-content: flex-end;
     padding-bottom: 20px;
+    list-style: none;
     color: $color-text; 
     &:hover {
         .contacts__name {
@@ -30,6 +38,9 @@
         .contacts__image {
             background: $color-primary; 
         }
+    }
+    @include media-laptop {
+        margin: 0 auto 0 0;
     }
 }
 
@@ -41,7 +52,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 35px;
+    min-width: 35px;
     height: 35px;
     background: $color-background;
     border-radius: 50px;
@@ -63,15 +74,26 @@
 
 .contacts__text {
     @include font(1.6rem, 2.4rem);
+    @include media-tablet {
+        @include font(1.4rem, 2rem);
+    }
 }
 
 .contacts__number {
     @include font(1.8rem, 2.2rem, 500);
+    @include media-tablet {
+        @include font(1.6rem, 2rem, 500);
+    }
 }
 
 .contacts__name {
     width: 142px;
     margin-left: 10px;
     @include font(1.7rem);
-
+    @include media-laptop {
+        @include font();
+    }
+    @include media-tablet {
+        @include font(1.5rem);
+    }
 }
