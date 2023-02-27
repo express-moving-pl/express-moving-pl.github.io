@@ -42,6 +42,9 @@
 .geography__content {
     max-width: 85%;
     margin: 0 auto;
+    @include media-mobile {
+        max-width: 90%;
+    }
     @include media-mobile-small {
         max-width: 100%;
     }

@@ -215,7 +215,7 @@ a {
 }
 @media (max-width: 735px) {
   .contact {
-    width: 230px;
+    width: 233px;
     padding: 8px 15px;
   }
 }
@@ -968,6 +968,11 @@ a {
 .geography__content {
   max-width: 85%;
   margin: 0 auto;
+}
+@media (max-width: 735px) {
+  .geography__content {
+    max-width: 90%;
+  }
 }
 @media (max-width: 380px) {
   .geography__content {
