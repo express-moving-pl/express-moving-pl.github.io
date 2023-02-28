@@ -52,8 +52,8 @@ h1 {
 }
 @media (max-width: 735px) {
   h1 {
-    font-size: 3rem;
-    line-height: 4rem;
+    font-size: 2.75rem;
+    line-height: 3.3rem;
     font-weight: 600;
     font-style: normal;
   }
@@ -165,7 +165,7 @@ a {
 }
 @media (max-width: 990px) {
   .logo {
-    width: 250px;
+    width: 245px;
   }
 }
 
@@ -406,7 +406,6 @@ a {
 @media (max-width: 735px) {
   .header__language {
     max-width: 100%;
-    box-shadow: none;
     z-index: 1;
   }
 }
@@ -728,12 +727,6 @@ a {
   text-transform: uppercase;
   text-shadow: 1px 1px 2px #1D1D1D, 0 0 1em #D6D6D6, 0 0 0.2em #FEFEFE;
 }
-@media (max-width: 735px) {
-  .services__title {
-    text-align: center;
-  }
-}
-
 .services__description {
   padding-top: 14px;
   font-size: 1.7rem;
@@ -749,6 +742,12 @@ a {
     line-height: 1.8rem;
     font-weight: 500;
     font-style: normal;
+  }
+}
+@media (max-width: 990px) {
+  .services__description {
+    padding-top: 15px;
+    padding-bottom: 10px;
   }
 }
 

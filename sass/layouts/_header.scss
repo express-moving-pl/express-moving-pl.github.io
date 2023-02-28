@@ -40,7 +40,6 @@
     text-align: end;
     @include media-mobile {
         max-width: 100%;
-        box-shadow: none;
         z-index: 1;
     }
 }
@@ -59,8 +58,6 @@
     }
     // &:not(.language_aktive):hover {
     //     color: $color-primary;
-    //     border-bottom: 1px solid $color-primary;
-    //     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.7);
     // }
 }
 
