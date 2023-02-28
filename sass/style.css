@@ -52,7 +52,7 @@ h1 {
 }
 @media (max-width: 735px) {
   h1 {
-    font-size: 2.75rem;
+    font-size: 2.8rem;
     line-height: 3.3rem;
     font-weight: 600;
     font-style: normal;
@@ -165,7 +165,7 @@ a {
 }
 @media (max-width: 990px) {
   .logo {
-    width: 245px;
+    width: 248px;
   }
 }
 
@@ -722,11 +722,22 @@ a {
     margin: 20px 0 0;
   }
 }
+@media (max-width: 735px) {
+  .services__text {
+    margin: 25px 0 0;
+  }
+}
 
 .services__title {
   text-transform: uppercase;
   text-shadow: 1px 1px 2px #1D1D1D, 0 0 1em #D6D6D6, 0 0 0.2em #FEFEFE;
 }
+@media (max-width: 735px) {
+  .services__title {
+    text-align: center;
+  }
+}
+
 .services__description {
   padding-top: 14px;
   font-size: 1.7rem;
@@ -747,7 +758,7 @@ a {
 @media (max-width: 990px) {
   .services__description {
     padding-top: 15px;
-    padding-bottom: 10px;
+    padding-bottom: 16px;
   }
 }
 
@@ -1007,7 +1018,7 @@ a {
 }
 @media (max-width: 380px) {
   .item {
-    padding: 22px 20px 10px;
+    padding: 20px 20px 10px;
     width: 90%;
   }
 }
