@@ -406,6 +406,7 @@ a {
 @media (max-width: 735px) {
   .header__language {
     max-width: 100%;
+    box-shadow: none;
     z-index: 1;
   }
 }
@@ -1040,6 +1041,7 @@ a {
 @media (max-width: 990px) {
   .item-tablet-mobile {
     flex-basis: 44%;
+    list-style-type: circle;
   }
 }
 @media (max-width: 735px) {
