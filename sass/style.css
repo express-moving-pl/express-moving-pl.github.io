@@ -53,7 +53,7 @@ h1 {
 @media (max-width: 735px) {
   h1 {
     font-size: 2.8rem;
-    line-height: 3.3rem;
+    line-height: 3.4rem;
     font-weight: 600;
     font-style: normal;
   }
@@ -724,7 +724,7 @@ a {
 }
 @media (max-width: 735px) {
   .services__text {
-    margin: 25px 0 0;
+    margin: 26px 0 0;
   }
 }
 
@@ -1011,14 +1011,13 @@ a {
 @media (max-width: 735px) {
   .item {
     margin: 0 auto;
-    padding: 22px 20px 10px;
+    padding: 20px 20px 10px;
     width: 80%;
     background: rgba(255, 255, 255, 0.7);
   }
 }
 @media (max-width: 380px) {
   .item {
-    padding: 20px 20px 10px;
     width: 90%;
   }
 }
@@ -1098,9 +1097,9 @@ a {
 }
 @media (max-width: 735px) {
   .item__image-background {
-    min-width: 50px;
-    width: 50px;
-    height: 50px;
+    min-width: 45px;
+    width: 45px;
+    height: 45px;
   }
 }
 
@@ -1110,14 +1109,20 @@ a {
 }
 @media (max-width: 735px) {
   .item__image {
-    width: 30px;
-    height: 30px;
+    width: 27px;
+    height: 27px;
   }
 }
 
 .item__image-like {
   width: 50px;
   height: 50px;
+}
+@media (max-width: 735px) {
+  .item__image-like {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .item__arrow {
