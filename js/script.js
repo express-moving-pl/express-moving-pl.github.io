@@ -4,10 +4,6 @@ window.onload = function() {
     addBtnClickHandler();
 }
 
-const headerLanguages = document.querySelectorAll('.header__language .language');
-const itemText = document.querySelectorAll('.item .item__text');
-const advantages = document.querySelector('.lng-advantages1');
-
 const addBtnClickHandler = () => {
     document.querySelector('.header__language').addEventListener('click', (e) => {
         if(e.target.classList.contains('language')) {
@@ -26,22 +22,21 @@ const selectClickedBtn = (clickedBtn) => {
 }
 
 const removeSelectedBtn = () => {
-    headerLanguages.forEach(language => {
+    document.querySelectorAll('.header__language .language').forEach(language => {
         language.classList.remove('language_aktive');
     })
 }
-console.log(document.getElementById('header-number').href)
 const changeLanguage = (aktiveLanguage) => {
     for(let key in langArr) {
         document.querySelector('.lng-' + key).innerHTML = langArr[key][aktiveLanguage];
     }        
     if(aktiveLanguage == 'pl') {
         document.getElementById('header-number').href = 'tel:+48508675277';
-        console.log(document.getElementById('header-number').href)
         document.getElementById('footer-number').href = 'tel:+48508675277';
-        itemText.forEach(text => {
+        document.querySelectorAll('.item .item__text').forEach(text => {
             text.classList.add('item__text-pl');
         })
-        advantages.style.fontWeight = '600';
+        document.querySelector('.lng-advantages1').style.fontWeight = '600';
+        document.getElementById('h1').style.fontSize = '2.64rem';
     }
 }
