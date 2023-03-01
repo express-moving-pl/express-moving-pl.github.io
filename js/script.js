@@ -37,6 +37,6 @@ const changeLanguage = (aktiveLanguage) => {
             text.classList.add('item__text-pl');
         })
         document.querySelector('.lng-advantages1').style.fontWeight = '600';
-        document.getElementById('h1').style.fontSize = '2.64rem';
+        document.getElementById('h1').style.fontSize = '2.63rem';
     }
 }
