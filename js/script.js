@@ -30,14 +30,15 @@ const removeSelectedBtn = () => {
         language.classList.remove('language_aktive');
     })
 }
-
+console.log(document.getElementById('header-number').href)
 const changeLanguage = (aktiveLanguage) => {
     for(let key in langArr) {
         document.querySelector('.lng-' + key).innerHTML = langArr[key][aktiveLanguage];
-    }
+    }        
     if(aktiveLanguage == 'pl') {
-        document.getElementById('header-number').href ="+48508675277";
-        document.getElementById('footer-number').href ="+48508675277";
+        document.getElementById('header-number').href = 'tel:+48508675277';
+        console.log(document.getElementById('header-number').href)
+        document.getElementById('footer-number').href = 'tel:+48508675277';
         itemText.forEach(text => {
             text.classList.add('item__text-pl');
         })
