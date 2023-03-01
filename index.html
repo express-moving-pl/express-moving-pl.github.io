@@ -1,16 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Перевозка грузов в Европу. Перевезти вещи, мебель. Лучшая цена. 
-    Грузоперевозки по Европе. Переезд. Переехать в Европу. Переехать в Европе. Переехать. 
-    Перевезти в Польшу, Германию, Грецию, Италию, Испанию, Нидерланды, Бельгию, Францию, Чехию, Португалию.
-    Transport towarów do Europy. Przenieś rzeczy, meble. Najlepsza cena.
-     Transport ładunków w Europie. Poruszający. Przenieś się do Europy. Przenieś się do Europy. Przenosić.
-     Transport do Polski, Niemiec, Grecji, Włoch, Hiszpanii, Holandii, Belgii, Francji, Czech, Portugalii">
+    <meta name="description" content="express moving. Перевозка грузов в Европу. Перевезти вещи, мебель. Лучшая цена. 
+    Грузоперевозки по Европе. Переезд. Переехать в Европу. Переехать в Европе. Переехать.">
     <link rel="icon" href="assets/icons/car.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,14 +21,14 @@
                 <p class="logo__text">express moving</p>
             </div>
             <div class="header__contacts">
-                <a class="contact__link" href="tel:+48452687424">    
+                <a id="header-number" class="contact__link" href="tel:+48452687424">    
                     <div class="contact">
                         <div class="contacts__image">
                             <img class="image" src="assets/icons/phone2.svg" alt="phone">
                         </div>
                         <div class="contacts__content">
-                            <p class="contacts__text">Заказать&nbsp;по&nbsp;телефону</p>
-                            <p class="contacts__number">+48 452 687 424</p>
+                            <p class="contacts__text lng-phone-text">Заказать&nbsp;по&nbsp;телефону</p>
+                            <p class="contacts__number lng-phone-number">+48 452 687 424</p>
                         </div>
                     </div>
                 </a>
@@ -42,15 +38,15 @@
                             <img class="image" src="assets/icons/telegram2.svg" alt="telegram">
                         </div>
                         <div class="contacts__content">
-                            <p class="contacts__text">или через Телеграм</p>
+                            <p class="contacts__text lng-telegram-text">или через Телеграм</p>
                             <p class="contacts__number">@Maksim_Vil</p>
                         </div>
                     </div>
                 </a>
             </div>
             <div class="header__language">
-                <span class="language language_aktive">RU</span>
-                <span class="language">PL</span>
+                <button id="ru" class="language language_aktive">RU</button>
+                <button id="pl" class="language">PL</button>
             </div>
         </div>
     </header>
@@ -59,8 +55,8 @@
         <section class="services">
             <div class="wrapper services__wrapper">
                 <div class="services__text">
-                    <h1 class="services__title">Грузовые перевозки <br>по Европе</h1>
-                    <p class="services__description">Поможем с транспортировкой любой сложности <br> Ваши вещи будут доставлены в целости и сохранности</p>
+                    <h1 class="services__title lng-services-title">Грузовые перевозки <br>по Европе</h1>
+                    <p class="services__description lng-services-description">Поможем с транспортировкой любой сложности <br> Ваши вещи будут доставлены в целости и сохранности</p>
                 </div>
                 <div class="services__content layout-4-column">
 
@@ -68,7 +64,7 @@
                         <div class="item__image-background">
                             <img class="item__image" src="assets/icons/txt2.svg" alt="services">
                         </div>
-                        <h3 class="item__text item__text_services">НАШИ УСЛУГИ</h3>
+                        <h3 class="h3 item__text item__text_services lng-services">Наши услуги</h3>
                         <img class="item__arrow" src="assets/icons/arrow_right.svg" alt="services">
                     </div>
 
@@ -76,21 +72,21 @@
                         <div class="item__image-background">
                             <img class="item__image" src="assets/icons/bed.svg" alt="services">
                         </div>
-                        <h3 class="item__text">квартирные переезды</h3>
+                        <h3 class="h3 item__text lng-apartment-moving">квартирные переезды</h3>
                     </div>
 
                     <div class="item">
                         <div class="item__image-background">
                             <img class="item__image" src="assets/icons/computer.svg" alt="services">
                         </div>
-                        <h3 class="item__text">офисные переезды</h3>
+                        <h3 class="h3 item__text lng-office-moving">офисные переезды</h3>
                     </div>
 
                     <div class="item">
                         <div class="item__image-background">
                             <img class="item__image" src="assets/icons/boxes.svg" alt="services">
                         </div>
-                        <h3 class="item__text">перевозка сборных грузов</h3>
+                        <h3 class="h3 item__text lng-cargo-transportation">перевозка сборных грузов</h3>
                     </div>
 
                 </div>
@@ -100,35 +96,35 @@
                         <div class="item__image-background">
                             <img class="item__image" src="assets/icons/txt2.svg" alt="services">
                         </div>
-                        <h3 class="item__text item__text_services">НАШИ УСЛУГИ</h3>
+                        <h3 class="h3 item__text item__text_services lng-services1">Наши услуги</h3>
                     </div>
 
                     <div class="item item-mobile">
                         <div class="item__image-background">
                             <img class="item__image" src="assets/icons/bed.svg" alt="services">
                         </div>
-                        <h3 class="item__text">квартирные переезды</h3>
+                        <h3 class="h3 item__text lng-apartment-moving1">квартирные переезды</h3>
                     </div>
 
                     <div class="item item-mobile">
                         <div class="item__image-background">
                             <img class="item__image" src="assets/icons/computer.svg" alt="services">
                         </div>
-                        <h3 class="item__text">офисные переезды</h3>
+                        <h3 class="h3 item__text lng-office-moving1">офисные переезды</h3>
                     </div>
 
                     <div class="item item-mobile">
                         <div class="item__image-background">
                             <img class="item__image" src="assets/icons/boxes.svg" alt="services">
                         </div>
-                        <h3 class="item__text">перевозка сборных грузов</h3>
+                        <h3 class="h3 item__text lng-cargo-transportation1">перевозка сборных грузов</h3>
                     </div>
 
                     <div class="item item-tablet-mobile">
                         <div class="item__image-background">
                             <img class="item__image-like" src="assets/icons/like.svg" alt="services">
                         </div>
-                        <h3 class="item__text item__text_services">ПРЕИМУЩЕСТВА</h3>
+                        <h3 class="h3 item__text item__text_services lng-advantages">преимущества</h3>
                     </div>
                 </div>
 
@@ -139,44 +135,44 @@
             <div class="wrapper">
                 <div class="services__content layout-4-column">
                     <div class="item item_content item__services">
-                        <p class="content__text content__text_company">преимущества</p>
+                        <p class="content__text content__text_company lng-advantages1">преимущества</p>
                         <img class="item__arrow item__arrow_company" src="assets/icons/arrow_right.svg" alt="services">
                     </div>
                     <div class="item item_content">
-                        <p class="content__text">пунктуальность и надежность</p>
+                        <p class="content__text lng-punctuality">пунктуальность и надежность</p>
                     </div>
                     <div class="item item_content">
-                        <p class="content__text">лучшие цены</p>
+                        <p class="content__text lng-prices">лучшие цены</p>
                     </div>
                     <div class="item item_content">
-                        <p class="content__text">гарантия сохранности</p>
+                        <p class="content__text lng-guarantee">гарантия сохранности</p>
                     </div>
                 </div>
 
                 <div class="services__content-small">
                     <ul class="item item_content item-tablet-mobile item-none">
-                        <li class="content__text">квартирные переезды</li>
-                        <li class="content__text">офисные переезды</li>
-                        <li class="content__text">перевозка сборных грузов</li>
+                        <li class="content__text lng-apartment-moving2">квартирные переезды</li>
+                        <li class="content__text lng-office-moving2">офисные переезды</li>
+                        <li class="content__text lng-cargo-transportation2">перевозка сборных грузов</li>
                     </ul>
                     <ul class="item item_content item-tablet-mobile item__advantages-mobile">
-                        <li class="content__text">пунктуальность и надежность</li>
-                        <li class="content__text">лучшие цены</li>
-                        <li class="content__text">гарантия сохранности</li>
+                        <li class="content__text lng-punctuality1">пунктуальность и надежность</li>
+                        <li class="content__text lng-prices1">лучшие цены</li>
+                        <li class="content__text lng-guarantee1">гарантия сохранности</li>
                     </ul>
                 </div>
 
-                <h2 class="company__title">O компании</h2>
+                <h2 class="company__title lng-company">O компании</h2>
                 <div class="layout-2-column company__wrapper">
                     <div class="info__wrapper">
-                        <p class="company__info">
+                        <p class="company__info lng-company-info">
                             Мы — транспортная компания с многолетним опытом работы в сфере грузоперевозок по Европе.<br>
                             Мы успешно выполняем свои задачи по доставке грузов нашим клиентам уже более 7 лет.<br>
                             У нас высококвалифицированный штат логистов и водителей. Все водители с большим опытом работы с грузами. 
                             Вы можете быть уверены, что ваши вещи будут доставлены в целости и сохранности. 
                             Наши машины оборудованы всем необходимым для качественного крепления груза. 
                         </p>
-                        <p class="company__info info-summarizing"> Звоните! Мы будем рады видеть Вас в числе наших клиентов!</p>
+                        <p class="company__info info-summarizing lng-company-summarizing">Звоните! Мы будем рады видеть Вас в числе наших клиентов!</p>
                     </div>
                     <div class="company__image"></div>
                 </div>
@@ -185,34 +181,34 @@
 
         <section class="geography">
             <div class="wrapper geography__wrapper">
-                <h2 class="geography__title">География перевозок</h2>
+                <h2 class="geography__title lng-geography-title">География перевозок</h2>
                 <div class="geography__content layout-3-column">
                     <div class="card card_germany">
-                        <p class="card__text">Германия</p>
+                        <p class="card__text lng-germany">Германия</p>
                     </div>
                     <div class="card card_france">
-                        <p class="card__text">Франция</p>
+                        <p class="card__text lng-france">Франция</p>
                     </div>
                     <div class="card card_czech">
-                        <p class="card__text">Чехия</p>
+                        <p class="card__text lng-czech">Чехия</p>
                     </div>
                     <div class="card card_belgium">
-                        <p class="card__text">Бельгия</p>
+                        <p class="card__text lng-belgium">Бельгия</p>
                     </div>
                     <div class="card card_netherlands">
-                        <p class="card__text">Нидерланды</p>
+                        <p class="card__text lng-netherlands">Нидерланды</p>
                     </div>
                     <div class="card card_spain">
-                        <p class="card__text">Испания</p>
+                        <p class="card__text lng-spain">Испания</p>
                     </div>
                     <div class="card card_portugal">
-                        <p class="card__text">Португалия</p>
+                        <p class="card__text lng-portugal">Португалия</p>
                     </div>
                     <div class="card card_italy">
-                        <p class="card__text">Италия</p>
+                        <p class="card__text lng-italy">Италия</p>
                     </div>
                     <div class="card card_greece">
-                        <p class="card__text">Греция</p>
+                        <p class="card__text lng-greece">Греция</p>
                     </div>
                 </div> 
             </div>
@@ -232,11 +228,11 @@
             </div>
             <ul class="footer__contacts">
                 <li>
-                    <a class="contact__link contact-footer" href="tel:+48452687424">  
+                    <a id="footer-number" class="contact__link contact-footer" href="tel:+48452687424">  
                         <div class="contacts__image">
                             <img class="image" src="assets/icons/phone2.svg" alt="phone">
                         </div>
-                        <p class="contacts__name contacts__name-number">+48&nbsp;452&nbsp;687&nbsp;424</p>
+                        <p class="contacts__name contacts__name-number lng-phone-number1">+48&nbsp;452&nbsp;687&nbsp;424</p>
                     </a>
                 </li>
                 <li>
@@ -244,7 +240,7 @@
                         <div class="contacts__image">
                             <img class="image" src="assets/icons/telegram2.svg" alt="telegram">
                         </div>
-                        <p class="contacts__name">Телеграм</p>
+                        <p class="contacts__name lng-telegram">Телеграм</p>
                     </a>
                 </li>
             </ul>
@@ -252,6 +248,7 @@
         </div>
     </footer>
 
+    <script type="module" src="js/script.js"></script>
 </body>
 
 </html>

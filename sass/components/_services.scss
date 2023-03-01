@@ -35,7 +35,7 @@
 }
 
 .services__text {
-    max-width: 680px;
+    max-width: 710px;
     margin: 155px 0 0 30px;
     padding: 20px 40px;
     color: $color-additional;
@@ -44,10 +44,7 @@
         padding: 20px 0;
     }
     @include media-tablet {
-        margin: 95px 0 0;
-    }
-    @include media-tablet {
-        margin: 20px 0 0;
+        margin: 90px 0 0;
     }
     @include media-mobile {
         margin: 26px 0 0;
