@@ -33,10 +33,16 @@ const changeLanguage = (aktiveLanguage) => {
     if(aktiveLanguage == 'pl') {
         document.getElementById('header-number').href = 'tel:+48508675277';
         document.getElementById('footer-number').href = 'tel:+48508675277';
+        document.querySelector('.lng-advantages1').style.fontWeight = '600';
+        document.querySelector('.services__title').classList.add('services__title-pl');
         document.querySelectorAll('.item .item__text').forEach(text => {
             text.classList.add('item__text-pl');
         })
-        document.querySelector('.lng-advantages1').style.fontWeight = '600';
-        document.getElementById('h1').style.fontSize = '2.63rem';
+    } else {
+        document.querySelector('.lng-advantages1').style.fontWeight = '500';
+        document.querySelector('.services__title').classList.remove('services__title-pl');
+        document.querySelectorAll('.item .item__text').forEach(text => {
+            text.classList.remove('item__text-pl');
+        })
     }
 }
