@@ -21,7 +21,7 @@ const langArr = {
     },
     "services-description": {
         "ru": "Поможем с транспортировкой любой сложности<br> Ваши вещи будут доставлены в целости и сохранности",
-        "pl": "Pomożemy w transporcie o dowolnej złożoności<br> Twoje rzeczy zostaną dostarczone całe i zdrowe"
+        "pl": "Obsługujemy firmy i klientów prywatnych. Przewóz rzeczy i towarów wykonujemy profesjonalnie na terenie Warszawy, a także całego kraju i Unii Europejskiej <br>Skontaktuj się z nami, aby uzyskać więcej informacji"
     },
     "services": {
         "ru": "Наши услуги",
@@ -109,7 +109,7 @@ const langArr = {
     },
     "company-summarizing": {
         "ru": "Звоните! Мы будем рады видеть Вас в числе наших клиентов!",
-        "pl": "Proszę dzwonić! Będzie nam miło widzieć Cię wśród naszych klientów!"
+        "pl": "Będzie nam miło widzieć Cię wśród naszych klientów!"
     },
     "geography-title": {
         "ru": "География перевозок",
@@ -125,7 +125,7 @@ const langArr = {
     },
     "czech": {
         "ru": "Чехия",
-        "pl": "Czech"
+        "pl": "Czechy"
     },
     "belgium": {
         "ru": "Бельгия",
